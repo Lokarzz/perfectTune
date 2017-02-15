@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "535958971947",
+    "project_id": "firebase-perfecttune"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535958971947:android:f326577685989736",
+        "android_client_info": {
+          "package_name": "com.karlotoy.perfecttune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535958971947-dohnr5ckculml2o7979jbftd3l509m5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0NQL9ZH1zGJRlrF6KQau_hdhksJwE8mE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
