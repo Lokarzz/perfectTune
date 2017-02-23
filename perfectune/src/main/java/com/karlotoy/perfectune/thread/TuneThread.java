@@ -8,7 +8,7 @@ import android.media.AudioTrack;
  * Created by Nerubia on 1/18/2017.
  */
 
-public class PerfectTune extends Thread {
+public class TuneThread extends Thread {
 
     private boolean isRunning;
     private int sr = 44100;
@@ -53,11 +53,6 @@ public class PerfectTune extends Thread {
 
     public void setTuneFreq(double tuneFreq) {
         this.tuneFreq = tuneFreq;
-    }
-
-    @Override
-    public synchronized void start() {
-        super.start();
     }
 
     public boolean isRunning() {
