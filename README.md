@@ -18,7 +18,7 @@ Then add the library by including it in one of your dependencies
 
 ```sh
 dependencies {
-    compile 'com.github.karlotoy:perfectTune:1.0.0'
+    compile 'com.github.karlotoy:perfectTune:1.0.2'
 }
 ```
 
