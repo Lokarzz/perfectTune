@@ -32,15 +32,13 @@ PerfectTune perfectTune = new PerfectTune();
 
 set your desired frequency
 ```sh
-perfectTune.setTuneFreq(1108.73D);
+perfectTune.setTuneFreq(freq in hz);
 ```
-note: default frequency is 440hz
 
 Start/Stop the tune by
-
 ```sh
 //start the tune
-perfectTune.start();
+perfectTune.playTune();
 //stops the tune
 perfectTune.stopTune();
 ```
