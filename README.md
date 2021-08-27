@@ -18,7 +18,7 @@ Then add the library by including it in one of your dependencies
 
 ```sh
 dependencies {
-    compile 'com.github.karlotoy:perfectTune:1.0.2'
+    implementation 'com.github.karlotoy:perfectTune:1.0.2'
 }
 ```
 
@@ -33,6 +33,11 @@ PerfectTune perfectTune = new PerfectTune();
 set your desired frequency
 ```sh
 perfectTune.setTuneFreq(freq in hz);
+```
+
+set the amplitude (default 10000)
+```java
+perfectTune.setAmplitude(amp);
 ```
 
 Start/Stop the tune by

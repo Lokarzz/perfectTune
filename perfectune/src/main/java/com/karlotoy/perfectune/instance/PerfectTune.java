@@ -10,6 +10,7 @@ public class PerfectTune {
 
     private TuneThread tuneThread;
     private double tuneFreq = 0f;
+    private int tuneAmp = 0;
 
     public PerfectTune playTune(){
         if(tuneThread == null){
@@ -30,6 +31,15 @@ public class PerfectTune {
     public double getTuneFreq() {
         return tuneFreq;
     }
+
+    public void setTuneAmplitude(int tuneAmplitude) {
+        this.tuneAmp = tuneAmplitude;
+        if(tuneThread != null) {
+            tuneThread.setAmplitude(tuneAmp);
+        }
+    }
+
+    public double getAmplitude() { return tuneAmp; }
 
     public void stopTune(){
         if(tuneThread != null){

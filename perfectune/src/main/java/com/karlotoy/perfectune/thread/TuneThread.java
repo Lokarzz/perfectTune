@@ -13,6 +13,7 @@ public class TuneThread extends Thread {
     private boolean isRunning;
     private int sr = 44100;
     private double tuneFreq = 440;
+    private int amp = 10000;
 
     @Override
     public void run() {
@@ -27,7 +28,6 @@ public class TuneThread extends Thread {
                 AudioTrack.MODE_STREAM);
 
         short samples[] = new short[buffsize];
-        int amp = 10000;
         double twopi = 8.*Math.atan(1.);
         double ph = 0.0;
 
@@ -54,6 +54,10 @@ public class TuneThread extends Thread {
     public void setTuneFreq(double tuneFreq) {
         this.tuneFreq = tuneFreq;
     }
+
+    public int getAmplitude() { return amp; }
+
+    public void setAmplitude(int amplitude) { this.amp = amplitude; }
 
     public boolean isRunning() {
         return isRunning;
