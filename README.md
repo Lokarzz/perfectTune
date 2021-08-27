@@ -1,4 +1,7 @@
 # Perfect Tune Library
+
+[![](https://jitpack.io/v/Lokarzz/perfectTune.svg)](https://jitpack.io/#Lokarzz/perfectTune)
+
 Android Library generate simple audio tune of different frequency with no sweat.
 generating audio tune is not that easy. This library will help you.
 
