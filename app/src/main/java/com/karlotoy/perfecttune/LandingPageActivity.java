@@ -12,7 +12,7 @@ import com.karlotoy.perfectune.instance.PerfectTune;
 
 public class LandingPageActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private SeekBar mSlider_1, mSlider_2;
+    private SeekBar mSlider_1, mSlider_2, mSliderAmp;
     private double sliderval;
     private PerfectTune perfectTune1, perfectTune2;
 
@@ -23,6 +23,7 @@ public class LandingPageActivity extends AppCompatActivity implements View.OnCli
 
         mSlider_1 = (SeekBar) findViewById(R.id.freq_1_sb);
         mSlider_2 = (SeekBar) findViewById(R.id.freq_2_sb);
+        mSliderAmp = (SeekBar) findViewById(R.id.volume_sb);
 
         findViewById(R.id.play_1_btn).setOnClickListener(this);
         findViewById(R.id.play_2_btn).setOnClickListener(this);
@@ -37,6 +38,7 @@ public class LandingPageActivity extends AppCompatActivity implements View.OnCli
 
         mSlider_1.setOnSeekBarChangeListener(getSeekBarChangeListener());
         mSlider_2.setOnSeekBarChangeListener(getSeekBarChangeListener());
+        mSliderAmp.setOnSeekBarChangeListener(getSeekBarChangeListener());
     }
 
     public SeekBar.OnSeekBarChangeListener getSeekBarChangeListener(){
@@ -52,6 +54,12 @@ public class LandingPageActivity extends AppCompatActivity implements View.OnCli
                             break;
                         case R.id.freq_2_sb:
                             perfectTune2.setTuneFreq(sliderval * TuneNote.A4);
+                            break;
+                        case R.id.volume_sb:
+                            int maxAmp = 30000;
+                            int amp = (int)(sliderval * maxAmp);
+                            perfectTune1.setTuneAmplitude(amp);
+                            perfectTune2.setTuneAmplitude(amp);
                             break;
                     }
                 }

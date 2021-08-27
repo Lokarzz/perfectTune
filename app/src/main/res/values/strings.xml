@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PerfectTune</string>
+    <string name="volume_title">Volume</string>
 </resources>
