@@ -1,13 +1,13 @@
 package com.karlotoy.perfecttune;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
 import com.karlotoy.perfectune.constants.TuneNote;
-import com.karlotoy.perfectune.thread.PerfectTune;
+import com.karlotoy.perfectune.instance.PerfectTune;
 
 
 public class LandingPageActivity extends AppCompatActivity implements View.OnClickListener {
@@ -30,10 +30,10 @@ public class LandingPageActivity extends AppCompatActivity implements View.OnCli
         findViewById(R.id.stop_2_btn).setOnClickListener(this);
 
         perfectTune1 = new PerfectTune();
-        perfectTune1.start();
+        perfectTune1.playTune();
 
         perfectTune2 = new PerfectTune();
-        perfectTune2.start();
+        perfectTune2.playTune();
 
         mSlider_1.setOnSeekBarChangeListener(getSeekBarChangeListener());
         mSlider_2.setOnSeekBarChangeListener(getSeekBarChangeListener());
@@ -74,11 +74,11 @@ public class LandingPageActivity extends AppCompatActivity implements View.OnCli
         switch (view.getId()){
             case R.id.play_1_btn:
                 perfectTune1 = new PerfectTune();
-                perfectTune1.start();
+                perfectTune1.playTune();
                 break;
             case R.id.play_2_btn:
                 perfectTune2 = new PerfectTune();
-                perfectTune2.start();
+                perfectTune2.playTune();
                 break;
             case R.id.stop_1_btn:
                 if(perfectTune1 != null){
