@@ -1,4 +1,7 @@
 # Perfect Tune Library
+
+[![](https://jitpack.io/v/Lokarzz/perfectTune.svg)](https://jitpack.io/#Lokarzz/perfectTune)
+
 Android Library generate simple audio tune of different frequency with no sweat.
 generating audio tune is not that easy. This library will help you.
 
@@ -18,7 +21,7 @@ Then add the library by including it in one of your dependencies
 
 ```sh
 dependencies {
-    implementation 'com.github.karlotoy:perfectTune:1.0.3'
+    implementation 'com.github.Lokarzz:perfectTune:1.0.4'
 }
 ```
 

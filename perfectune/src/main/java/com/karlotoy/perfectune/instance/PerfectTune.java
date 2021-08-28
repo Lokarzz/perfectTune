@@ -39,7 +39,7 @@ public class PerfectTune {
         }
     }
 
-    public double getAmplitude() { return tuneAmp; }
+    public int getTuneAmplitude() { return tuneAmp; }
 
     public void stopTune(){
         if(tuneThread != null){
