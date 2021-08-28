@@ -21,7 +21,7 @@ Then add the library by including it in one of your dependencies
 
 ```sh
 dependencies {
-    implementation 'com.github.Lokarzz:perfectTune:1.0.4'
+    implementation 'com.github.Lokarzz:perfectTune:1.0.5'
 }
 ```
 
